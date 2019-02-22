@@ -1,0 +1,15 @@
+﻿<local:BaseWindowsDialog
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Beyova.VsExtension"
+             xmlns:PlatformUI="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.15.0" x:Class="Beyova.VsExtension.ConditionPicker"
+             mc:Ignorable="d" Width="220.601" Height="157.708" ResizeMode="NoResize" WindowStyle="ToolWindow" >
+    <Grid>
+        <ComboBox Margin="10,40,10,0" VerticalAlignment="Top" Height="35" x:Name="configurationSelection"/>
+        <Button Content="Apply" HorizontalAlignment="Left" Margin="10,80,0,10" Width="90" x:Name="btn_Apply" Click="Btn_Apply_Click" />
+        <Button Content="Discard" Margin="0,80,10,10" HorizontalAlignment="Right" Width="90" x:Name="btn_Discard" Click="Btn_Discard_Click" />
+        <Label x:Name="label_ConfigurationSource" Content="" Margin="10,10,10,0" VerticalAlignment="Top"/>
+    </Grid>
+</local:BaseWindowsDialog>
